@@ -1,10 +1,11 @@
+
 <!DOCTYPE html>
 
 <meta http-equiv="content-type" content="text/html;charset=utf-8" />
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Engagement - Vipin & Priya</title>
+	<title>We are getting engaged!! - Vipin & Priya</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="author" content="vipin" />
 
@@ -128,7 +129,7 @@
     }
 	
 .glow {
-  font-size: 80px;
+  font-size: 30px;
   color: #fff;
   text-align: center;
   animation: glow 1s ease-in-out infinite alternate;
@@ -143,6 +144,16 @@
     text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
   }
 }
+
+
+@media only screen and (max-width: 768px) {
+.fh5co-cover
+{
+  backgroun-size:100% !important;
+  background-position:-130px 0px !important;
+}
+}
+
 </style>
 
 	</head>
@@ -154,7 +165,7 @@
 <div class="curtain right-curtain">
 <img id="img2" src="images/img2.jpg" style="width:100%;height:100%;">
 </div>
-		<audio id="my_audio" autoplay>
+		<audio id="my_audio" loop>
   <source src="images/tujhmein_flute_version.mp3" type="audio/mpeg" >
   </audio>
   <label for="curtain-toggle" id="open-button"class="open-button" onclick="HandleCurtain()">
@@ -176,7 +187,7 @@
 		</div>
 	</nav>
 <div id="flower-container"></div>
-	<header id="fh5co-header" class="fh5co-cover" role="banner" style="background-image:url(images/background.jpeg);" data-stellar-background-ratio="0.5">
+	<header id="fh5co-header" class="fh5co-cover" id="BgImg" role="banner" style="background-image:url(images/background.jpeg);" data-stellar-background-ratio="0.5">
 		<div class="overlay"></div>
 		<div class="container">
 			<div class="row">
@@ -201,7 +212,7 @@
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
 					<h2>Hello!</h2>
-					<h3><b>July 12th, 2025 Ranchi, Jharkhand</b></h3>
+					<h3><b>July 7th, 2025 Ranchi, Jharkhand</b></h3>
 					<p>In the story written by fate, Vipin—strong and kind like a true king—has found his queen in Priya, graceful and full of warmth. As they prepare to unite their hearts in a timeless bond, we invite you to witness this royal celebration of love and togetherness.</p>
 				</div>
 			</div>
@@ -252,7 +263,7 @@
 									</div>
 									<div class="event-col">
 										<i class="icon-calendar"></i>
-										<span>Saturday 12</span>
+										<span>Monday 7</span>
 										<span>July, 2025</span>
 									</div>
 									<p>On this auspicious day, as two souls—Vipin and Priya—come together to exchange rings and promises, we welcome you to be part of this sacred and joyful moment. Surrounded by love, laughter, and blessings, this day marks the beginning of a lifetime filled with togetherness and cherished memories.</p>
@@ -331,10 +342,7 @@
 						</span>
 						<div class="feature-copy">
 							<h3>Venue Details</h3>
-							<p>The Royal Garden Banquet Hall
-Kanke Road, Near Rock Garden,
-Ranchi – 834008, Jharkhand, India
-<br>
+							<p>TBC<br>
 Contact - 7782876781
 </p>
 						</div>
@@ -346,7 +354,7 @@ Contact - 7782876781
 				</div>
 
 				<div class="col-md-6 animate-box">
-					<div class="fh5co-video fh5co-bg" style="background-image: url(images/img_bg_3.jpg); ">
+					<div class="fh5co-video fh5co-bg">
 						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3662.483436118741!2d85.2558036751029!3d23.370722178931306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f4de3a715b59eb%3A0x786948790938e719!2sRanchi%2C%20Jharkhand%20834005!5e0!3m2!1sen!2sin!4v1746942864926!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 						<div class="overlay"></div>
 					</div>
@@ -404,7 +412,7 @@ Contact - 7782876781
 
 	<script>
 	window.onload = function() {
-    document.getElementById("audiobtn").click(); 
+    SpeakHindi();
 }
 
 function HandleCurtain() { 
@@ -415,7 +423,7 @@ function HandleCurtain() {
 } 
 
 
-    var d = new Date(new Date().getTime() + 200 * 120 * 120 * 2000);
+    var d = new Date("07/07/2025");
 
     // default example
     simplyCountdown('.simply-countdown-one', {
@@ -448,6 +456,25 @@ function createFlower() {
 
 // Create a flower every 300ms
 setInterval(createFlower, 700);
+function SpeakHindi(){
+    const params = new URLSearchParams(window.location.search);
+
+     const name = params.get("name");
+      const text = document.getElementById('text').value;
+      const utterance = new SpeechSynthesisUtterance(name+','+text);
+      const voices = window.speechSynthesis.getVoices();
+
+      // Try to find a Hindi voice
+      const hindiVoice = voices.find(voice => voice.lang === 'hi-IN');
+      if (hindiVoice) {
+        utterance.voice = hindiVoice;
+      } else {
+       
+      }
+
+      utterance.lang = 'hi-IN';
+      speechSynthesis.speak(utterance);
+    }
 
 
 </script>
