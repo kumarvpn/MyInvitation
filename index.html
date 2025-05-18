@@ -153,6 +153,49 @@
   background-position:-200px 0px !important;
 }
 }
+ /* Floating Share Button */
+    .floating-share {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 1000;
+    }
+
+    .share-button {
+      background-color: white;
+      color: #fff;
+      border: none;
+      border-radius: 50%;
+      width: 56px;
+      height: 56px;
+      font-size: 24px;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Popup Share Menu */
+    .share-popup {
+      display: none;
+      position: absolute;
+      bottom: 70px;
+      right: 0;
+      background: #fff;
+      border-radius: 8px;
+      padding: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .share-popup a {
+      display: block;
+      text-decoration: none;
+      color: #333;
+      margin: 6px 0;
+      font-size: 14px;
+    }
+
+    .floating-share.active .share-popup {
+      display: block;
+    }
 
 </style>
 
@@ -387,7 +430,19 @@ Contact - 7782876781
 
 	<div class="gototop js-top">
 		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+		
+		
 	</div>
+	
+<!-- Floating Share Button -->
+<div class="floating-share" id="floatingShare">
+  <button class="share-button" onclick="toggleShare()">🔗</button>
+  <div class="share-popup">
+    <a href="https://wa.me/?text=https://vipinkipriya.life    कृपया पधारें और इस मंगल क्षण के साक्षी बनें।" target="_blank"><img width="50" height="50" src="https://img.icons8.com/ios/50/whatsapp--v1.png" alt="whatsapp--v1"/></a>
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https://vipinkipriya.life </br> कृपया पधारें और इस मंगल क्षण के साक्षी बनें।" target="_blank"><img width="50" height="50" src="https://img.icons8.com/ios/50/facebook-new.png" alt="facebook-new"/></a>
+  </div>
+</div>
+
 	
 	<!-- jQuery -->
 	<script src="js/jquery.min.js"></script>
@@ -479,6 +534,17 @@ function SpeakHindi(){
       speechSynthesis.speak(utterance);
     }
 
+ function toggleShare() {
+    document.getElementById("floatingShare").classList.toggle("active");
+  }
+
+  // Close popup when clicking outside
+  document.addEventListener("click", function(event) {
+    const shareBox = document.getElementById("floatingShare");
+    if (!shareBox.contains(event.target)) {
+      shareBox.classList.remove("active");
+    }
+  });
 
 </script>
 	</body>
