@@ -1,0 +1,550 @@
+
+<!DOCTYPE html>
+
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>🙏सप्रेम नमस्कार,हमें यह बताते हुए अत्यंत हर्ष हो रहा है कि हमारे प्रिय विपिन और प्रिया की सगाई का शुभ अवसर आ रहा है।कृपया पधारें और इस मंगल क्षण के साक्षी बनें।</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="vipin" />
+
+
+  	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="css/magnific-popup.css">
+
+	<!-- Owl Carousel  -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+<style>
+
+
+#flower-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 999;
+}
+
+.flower {
+  position: absolute;
+  font-size: 24px;
+  animation: fall linear infinite;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(-10%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh);
+    opacity: 0;
+  }
+}
+ body {
+      margin: 0;
+      font-family: sans-serif;
+      overflow-x: hidden;
+    }
+
+    #curtain-toggle {
+      display: none;
+    }
+
+    .curtain {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      width: 50%;
+      background: #d98738;
+      transition: transform 1s ease-in-out;
+      z-index: 1000;
+    }
+
+    .left-curtain {
+      left: 0;
+      transform: translateX(0);
+    }
+
+    .right-curtain {
+      right: 0;
+      transform: translateX(0);
+    }
+
+    #curtain-toggle:checked ~ .left-curtain {
+      transform: translateX(-100%);
+    }
+
+    #curtain-toggle:checked ~ .right-curtain {
+      transform: translateX(100%);
+    }
+
+    .content {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      padding-top: 100px;
+    }
+
+    .open-button {
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1100;
+      padding: 10px 20px;
+      font-size: 18px;
+      cursor: pointer;
+    }
+	
+.glow {
+  font-size: 30px;
+  color: #fff;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+.fh5co-cover
+{
+  backgroun-size:100% !important;
+  background-position:-200px 0px !important;
+}
+}
+ /* Floating Share Button */
+    .floating-share {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 1000;
+    }
+
+    .share-button {
+      background-color: white;
+      color: #fff;
+      border: none;
+      border-radius: 50%;
+      width: 56px;
+      height: 56px;
+      font-size: 24px;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Popup Share Menu */
+    .share-popup {
+      display: none;
+      position: absolute;
+      bottom: 70px;
+      right: 0;
+      background: #fff;
+      border-radius: 8px;
+      padding: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .share-popup a {
+      display: block;
+      text-decoration: none;
+      color: #333;
+      margin: 6px 0;
+      font-size: 14px;
+    }
+
+    .floating-share.active .share-popup {
+      display: block;
+    }
+
+</style>
+
+	</head>
+	<body>
+	<input type="checkbox" id="curtain-toggle">
+	<div class="curtain left-curtain">
+	<img id="img1"src="images/img1.jpg" style="width:100%;height:100%;"/>
+	</div>
+<div class="curtain right-curtain">
+<img id="img2" src="images/img2.jpg" style="width:100%;height:100%;">
+</div>
+		<audio id="my_audio">
+  <source src="images/tujhmein_flute_version.mp3" type="audio/mpeg" >
+  </audio>
+  <label for="curtain-toggle" id="open-button"class="open-button" onclick="HandleCurtain()">
+ <center><img src="images/lock.png" style="width:51%;height:10%;"></center>
+  <center><span class="glow">Click Here </span></center></label>
+  	<div class="fh5co-loader"></div>
+	<div id="page">
+	<nav class="fh5co-nav" >
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-5">
+					<div id="fh5co-logo"><a href="#">Vipya forever<strong> 🧿
+					
+					</strong></a></div>
+				</div>
+				
+			</div>
+			
+		</div>
+	</nav>
+<div id="flower-container"></div>
+	<header id="fh5co-header" class="fh5co-cover" id="BgImg" role="banner" style="background-image:url(images/newbg.jpg);" data-stellar-background-ratio="0.5">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center">
+					<div class="display-t">
+						<div class="display-tc animate-box" data-animate-effect="fadeIn">
+						<img src="images/lord.png" style="width:20%;height:20%;">
+							<h1>Vipin &amp; Priya </h1>
+							<h2 class="animate-box" data-animate-effect="fadeIn">Yes we are getting Married! </h2>
+							<div class="simply-countdown simply-countdown-one" style="background-color:transparent"></div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div id="fh5co-couple">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
+					<h2>Hello!</h2>
+					<h3><b>Nov 29th, 2025 Ranchi, Jharkhand</b></h3>
+					<p>In the story written by fate, Vipin—strong and kind like a true king—has found his queen in Priya, graceful and full of warmth. As they prepare to unite their hearts in a timeless bond, we invite you to witness this royal celebration of love and togetherness.</p>
+				</div>
+			</div>
+			<div class="couple-wrap animate-box">
+				<div class="couple-half">
+					<div class="groom">
+						<img src="images/groom.jpeg" alt="groom" class="img-responsive">
+					</div>
+					<div class="desc-groom fh5co-heading">
+						<h3>Vipin Kumar🤴</h3>
+						<p>Like a true king, Vipin has found his queen in Priya—a woman of grace, strength, and love.</p>
+					</div>
+				</div>
+				<p class="heart text-center"><i class="icon-heart2"></i></p>
+				<div class="couple-half">
+					<div class="bride">
+						<img src="images/bride.jpeg" alt="groom" class="img-responsive">
+					</div>
+					<div class="desc-bride">
+						<h3>Priya Kumari👸</h3>
+						<p>With the elegance of a queen and love in her heart, Priya has found her perfect king in Vipin.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="fh5co-event" class="fh5co-bg" style="background-image:url(https://i.pinimg.com/736x/16/55/9d/16559d70e7afabadc242e39a5f37567f.jpg);">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
+					<span>Our Special Events</span>
+					<h2>Marriage Events</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="display-t">
+					<div class="display-tc">
+						<div class="col-md-12 col-md-offset-0">
+							<div class="col-md-12 col-sm-12 text-center">
+								<div class="event-wrap animate-box">
+									<h3>Main Ceremony</h3>
+									<div class="event-col">
+										<i class="icon-clock"></i>
+										<span>7:00 PM Onwards</span>
+										<span></span>
+									</div>
+									<div class="event-col">
+										<i class="icon-calendar"></i>
+										<span>Saturday 29</span>
+										<span>Nov, 2025</span>
+									</div>
+									<p>On this auspicious day, as two souls—Vipin and Priya—come together to exchangepromises, we welcome you to be part of this sacred and joyful moment. Surrounded by love, laughter, and blessings, this day marks the beginning of a lifetime filled with togetherness and cherished memories.</p>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="fh5co-testimonial">
+		<div class="container">
+			<div class="row">
+				<div class="row animate-box">
+					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+						<span>RSVP</span>
+						<h2>We are expecting you</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12 animate-box">
+						<div class="wrap-testimony">
+							<div class="owl-carousel-fullwidth">
+								<div class="item">
+									<div class="testimony-slide active text-center">
+										<figure>
+											<img src="images/uncle.jpeg" alt="user">
+										</figure>
+										<span>Sri. Gurudayal Sahu</span>
+										<blockquote>
+											<p>अपने हृदय में अपार हर्ष के साथ, मैं आपको और आपके परिवार को सादर आमंत्रित करता/करती हूँ कि आप मेरी प्रिय पुत्री प्रिया और विपिन की रिंग सेरेमनी की शोभा बढ़ाएँ।
+कृपया रांची, झारखंड में इस दो दिलों के सुंदर मिलन के जश्न में हमारी खुशी में शामिल हों।
+आपकी उपस्थिति और शुभाशीर्वाद हमारे लिए अनमोल होंगे।</p>
+										</blockquote>
+									</div>
+								</div>
+								<div class="item">
+									<div class="testimony-slide active text-center">
+										<figure>
+											<img src="images/Parents1.jpeg" alt="user">
+										</figure>
+										<span>Sri. Satish Kr Sahu & Smt. Baijanti Devi</span>
+										<blockquote>
+											<p>अपार गर्व और हर्ष के साथ, मैं आपको एवं आपके परिवार को सादर आमंत्रित करता/करती हूँ कि आप मेरे पुत्र विपिन और प्रिया की रिंग सेरेमनी में पधारें।
+यह शुभ अवसर रांची, झारखंड में आयोजित किया जाएगा।
+उनकी इस सुंदर यात्रा की शुरुआत के साक्षी बनकर हमें कृतज्ञ करेंगे।</p></blockquote>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="fh5co-services" class="fh5co-section-gray">
+		<div class="container">
+			
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+					<h2>Locate Us</h2>
+					<p>To make your journey easier, we’ve included a location map of Ranchi—nestled in the heart of Jharkhand, where nature meets tradition. Follow the map to join us at the venue and be part of Vipin and Priya’s special day without a hitch.</p>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-6">
+					<div class="feature-left animate-box" data-animate-effect="fadeInLeft">
+						<span class="icon">
+							<i class="icon-calendar"></i>
+						</span>
+						<div class="feature-copy">
+							<h3>Venue Details</h3>
+							<p>Marriage Event-New Sarna Colony Daladilli Road, Kathal More lalgutuwa nagri Ranchi <br>
+Contact - 6299420721,7782876781
+</p>
+						</div>
+					</div>
+
+				
+					
+
+				</div>
+
+				<div class="col-md-6 animate-box">
+					<div class="fh5co-video fh5co-bg">
+						<!-- <iframe src="https://share.google/TMorKXsMLSnvUro4Z" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3662.679273897381!2d85.24776757510264!3d23.363631478936274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f4df0076d9dd23%3A0x10c4458aa9949b9e!2sKathal%20more%20daladili%20road!5e0!3m2!1sen!2sin!4v1759470653940!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					</div>
+				</div>
+			</div>
+
+			
+		</div>
+		<textarea id="text" rows="4" cols="50" hidden>सप्रेम नमस्कार,
+हमें यह बताते हुए अत्यंत हर्ष हो रहा है कि हमारे प्रिय विपिन और प्रिया की सगाई का शुभ अवसर आ रहा है।
+कृपया पधारें और इस मंगल क्षण के साक्षी बनें।</textarea>
+	</div>
+  
+
+	<footer id="fh5co-footer" role="contentinfo">
+		<div class="container">
+
+			<div class="row copyright">
+				<div class="col-md-12 text-center">
+					<p>
+						<small class="block">&copy;All Rights Reserved.</small> 
+						<small class="block">Designed by Vipin & Priya</small>
+					</p>
+				</div>
+			</div>
+
+		</div>
+	</footer>
+	</div>
+
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+		
+		
+	</div>
+	
+<!-- Floating Share Button -->
+<div class="floating-share" id="floatingShare">
+  <button class="share-button" onclick="toggleShare()">🔗</button>
+  <div class="share-popup">
+    <a href="https://wa.me/?text=https://vipinkipriya.life    कृपया पधारें और इस मंगल क्षण के साक्षी बनें।" target="_blank"><img width="50" height="50" src="https://img.icons8.com/ios/50/whatsapp--v1.png" alt="whatsapp--v1"/></a>
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https://vipinkipriya.life  कृपया पधारें और इस मंगल क्षण के साक्षी बनें।" target="_blank"><img width="50" height="50" src="https://img.icons8.com/ios/50/facebook-new.png" alt="facebook-new"/></a>
+  </div>
+</div>
+
+	
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Carousel -->
+	<script src="js/owl.carousel.min.js"></script>
+	<!-- countTo -->
+	<script src="js/jquery.countTo.js"></script>
+
+	<!-- Stellar -->
+	<script src="js/jquery.stellar.min.js"></script>
+	<!-- Magnific Popup -->
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/magnific-popup-options.js"></script>
+
+	<!-- // <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.min.js"></script> -->
+	<script src="js/simplyCountdown.js"></script>
+	<!-- Main -->
+	<script src="js/main.js"></script>
+
+	<script>
+	window.onload = function() {
+    SpeakHindi();
+}
+
+function HandleCurtain() { 
+  document.getElementById("my_audio").play(); 
+  document.getElementById("open-button").style.display="none"; 
+  //document.getElementById("img1").hide(); 
+  //document.getElementById("img2").hide(); 
+} 
+
+
+    var d = new Date("11/29/2025");
+
+    // default example
+    simplyCountdown('.simply-countdown-one', {
+        year: d.getFullYear(),
+        month: d.getMonth() + 1,
+        day: d.getDate()
+    });
+
+    //jQuery example
+    $('#simply-countdown-losange').simplyCountdown({
+        year: d.getFullYear(),
+        month: d.getMonth() + 1,
+        day: d.getDate(),
+        enableUtc: false
+    });
+
+function createFlower() {
+  const flower = document.createElement('div');
+  flower.classList.add('flower');
+  flower.innerText = "🏵️"; // You can also use an <img src="flower.png"> here
+  flower.style.left = Math.random() * 100 + 'vw';
+  flower.style.animationDuration = (5 + Math.random() * 2) + 's';
+  flower.style.fontSize = (20 + Math.random() * 10) + 'px';
+  document.getElementById('flower-container').appendChild(flower);
+
+  setTimeout(() => {
+    flower.remove();
+  }, 5000);
+}
+
+// Create a flower every 300ms
+setInterval(createFlower, 700);
+function SpeakHindi(){
+    const params = new URLSearchParams(window.location.search);
+
+     const name = params.get("name");
+      const text = document.getElementById('text').value;
+      const utterance = new SpeechSynthesisUtterance(name+','+text);
+      const voices = window.speechSynthesis.getVoices();
+
+      // Try to find a Hindi voice
+      const hindiVoice = voices.find(voice => voice.lang === 'hi-IN');
+      if (hindiVoice) {
+        utterance.voice = hindiVoice;
+      } else {
+       
+      }
+
+      utterance.lang = 'hi-IN';
+      speechSynthesis.speak(utterance);
+    }
+
+ function toggleShare() {
+    document.getElementById("floatingShare").classList.toggle("active");
+  }
+
+  // Close popup when clicking outside
+  document.addEventListener("click", function(event) {
+    const shareBox = document.getElementById("floatingShare");
+    if (!shareBox.contains(event.target)) {
+      shareBox.classList.remove("active");
+    }
+  });
+
+</script>
+	</body>
+</html>
